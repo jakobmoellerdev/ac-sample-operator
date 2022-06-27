@@ -1,0 +1,12 @@
+apiVersion: architecture.curriculum.my.domain/v1alpha1
+kind: PresentationControl
+metadata:
+  name: custom-func
+spec:
+  formula: "trunc((10*responseTime(url)), 3) + 'ms'"
+  parameters:
+    url:
+      value: "https://google.de"
+      type: string
+  recalculate:
+    every: 10s

@@ -1,0 +1,16 @@
+domain: my.domain
+layout:
+- go.kubebuilder.io/v3
+projectName: ac-sample-operator
+repo: github.com/jakobmoellersap/ac-sample-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.domain
+  group: architecture.curriculum
+  kind: PresentationControl
+  path: github.com/jakobmoellersap/ac-sample-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

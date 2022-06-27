@@ -1,0 +1,16 @@
+apiVersion: architecture.curriculum.my.domain/v1alpha1
+kind: PresentationControl
+metadata:
+  name: simple-calc
+spec:
+  formula: (((a * b) / 3) / c)*2
+  parameters:
+    a:
+      value: "10"
+      type: number
+    b:
+      value: "6"
+      type: number
+    c:
+      value: "2"
+      type: number
